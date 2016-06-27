@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "",
+  "version": "0.2.0",
+  "description": "",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "lib",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "npm run lint && npm run mocha",
+    "lint": "eslint lib test",
+    "mocha": "istanbul cover _mocha"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.13.1",
+    "eslint-config-xo-space": "^0.14.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3"
+  },
+  "eslintConfig": {
+    "extends": "xo-space"
+  }
+}

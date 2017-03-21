@@ -1,12 +1,6 @@
-/* eslint-env mocha */
-/* eslint-disable no-unused-expressions */
-'use strict';
+import test from 'ava';
+import myModule from '../lib';
 
-const moduleName = require('../lib');
-const expect = require('chai').expect;
-
-describe('<moduleName>', () => {
-  it('returns true', () => {
-    expect(moduleName).to.be.true;
-  });
+test('<myModule> returns true', t => {
+  t.true(myModule);
 });

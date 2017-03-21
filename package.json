@@ -16,16 +16,14 @@
     "lib"
   ],
   "scripts": {
-    "test": "npm run lint && npm run mocha",
-    "lint": "eslint lib test",
-    "mocha": "istanbul cover _mocha"
+    "test": "eslint lib test && nyc ava --verbose",
+    "report": "nyc report --reporter=lcov"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "ava": "^0.18.2",
     "eslint": "^3.18.0",
     "eslint-config-xo-space": "^0.16.0",
-    "istanbul": "^0.4.4",
-    "mocha": "^3.2.0"
+    "nyc": "^10.1.2"
   },
   "eslintConfig": {
     "extends": "xo-space"

@@ -23,7 +23,7 @@
     "ava": "^0.18.2",
     "eslint": "^3.18.0",
     "eslint-config-xo-space": "^0.16.0",
-    "nyc": "^10.1.2"
+    "nyc": "^10.2.0"
   },
   "eslintConfig": {
     "extends": "xo-space"
